@@ -13,4 +13,17 @@ a = Get next input
 b = Get next input
 c = Get next input
 dis = SquareRoot ((b * b)- (4 * a * c))
+Put "dis: \n" to output
 Put dis to output
+
+x_plus = (b + dis)/(2*a)
+x_minus = (b - dis)/(2*a)
+
+
+
+Put "x_plus: \n" to output
+Put x_plus to output
+Put "\n" to output
+
+Put "x_minus: \n" to output
+Put x_minus to output
