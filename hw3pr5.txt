@@ -29,8 +29,7 @@ Put "x_minus: \n" to output
 Put x_minus to output
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// Here are some of the Signature lines you will want to use
-
+// 
 Function Discriminant(float a, float b, float c) returns float dis_Out
    dis_Out = SquareRoot ((b * b)- (4 * a * c))
 
@@ -44,8 +43,6 @@ Function Main() returns nothing
    float a
    float b
    float c
-   float x_plus
-   float x_minus
    float array(2) answer
    a = Get next input
    b = Get next input
@@ -54,7 +51,6 @@ Function Main() returns nothing
    Put answer[0] to output
    Put "\n" to output
    Put answer[1] to output
-
 
 
 
