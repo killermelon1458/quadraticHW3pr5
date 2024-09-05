@@ -1,0 +1,12 @@
+// CSCI 1550: HW 3, Problem 5
+// Filename: hw3pr5.txt 
+// Name: Malachi Clifton, Eion, Tristan
+//
+// Exercise 1: Generating BOTH solutions to the quadratic equation
+float a
+float b
+float c
+float x_plus
+float x_minus
+float dis
+a = f
