@@ -9,4 +9,8 @@ float c
 float x_plus
 float x_minus
 float dis
-a = f
+a = Get next input
+b = Get next input
+c = Get next input
+dis = SquareRoot ((b * b)- (4 * a * c))
+Put dis to output
