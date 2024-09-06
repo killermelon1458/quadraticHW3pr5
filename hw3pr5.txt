@@ -52,6 +52,32 @@ Function Main() returns nothing
    Put "\n" to output
    Put answer[1] to output
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Function Discriminant(float a, float b, float c) returns float dis_Out
+   dis_Out = SquareRoot ((b * b)- (4 * a * c))
+
+Function QuadSolver(float a, float b, float c) returns float array(2) solsOut
+   float dis
+   dis = Discriminant(a,b,c)
+   solsOut[0] = (-b + dis)/(2*a)
+   solsOut[1] = (-b - dis)/(2*a)
+
+Function Main() returns nothing
+   float a
+   float b
+   float c
+   float array(2) answer
+   integer i
+For i = 0; i < 3; i++;
+   a = Get next input
+   b = Get next input
+   c = Get next input
+   answer = QuadSolver(a,b,c)
+   Put answer[0] to output
+   Put "\n" to output
+   Put answer[1] to output
+
 
 
 
