@@ -43,10 +43,14 @@ Function Main() returns nothing
    float b
    float c
    float array(2) answers
-   a = Get next input
-   b = Get next input
-   c = Get next input
-   answers = QuadSolver(a,b,c)
-   Put answers[0] to output
-   Put "\n" to output
-   Put answers[1] to output
+   integer count
+   integer numOfRuns
+   numOfRuns = 3
+   for count = 1; count<= numOfRuns; count = count + 1
+      a = Get next input
+      b = Get next input
+      c = Get next input
+      answers = QuadSolver(a,b,c)
+      Put answers[0] to output
+      Put "\n" to output
+      Put answers[1] to output
