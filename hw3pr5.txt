@@ -14,11 +14,8 @@ b = Get next input
 c = Get next input
 dis = SquareRoot ((b * b)- (4 * a * c))
 
-
 x_plus = (-b + dis)/(2*a)
 x_minus = (-b - dis)/(2*a)
-
-
 
 Put "x_plus: \n" to output
 Put x_plus to output
@@ -26,8 +23,11 @@ Put "\n" to output
 
 Put "x_minus: \n" to output
 Put x_minus to output
+
+
 // Excercise 2
 // Name: Malachi Clifton, Tristan
+
 Function Discriminant(float a, float b, float c) returns float discOut
    discOut = SquareRoot ((b * b)- (4 * a * c))
    
@@ -50,3 +50,38 @@ Function Main() returns nothing
    Put answers[0] to output
    Put "\n" to output
    Put answers[1] to output
+
+
+// Exercise 3
+// Name: Malachi
+
+Function Discriminant(float a, float b, float c) returns float discOut
+   discOut = SquareRoot ((b * b)- (4 * a * c))
+   
+Function QuadSolver(float a, float b, float c) returns float array(2) solsOut
+   float dis
+  
+   dis = Discriminant(a,b,c)
+   solsOut[0] = (-b + dis)/(2*a)
+   solsOut[1] = (-b - dis)/(2*a)
+   
+Function Main() returns nothing
+   // Give first input as number of quadratic problems to solve
+   // then input 3 numbers for each quadratic equation
+   float a
+   float b
+   float c
+   float array(2) answers
+   integer count
+   integer numOfRuns
+   numOfRuns = Get next input
+   for count = 1; count<= numOfRuns; count = count + 1
+      a = Get next input
+      b = Get next input
+      c = Get next input
+      answers = QuadSolver(a,b,c)
+      Put answers[0] to output
+      Put "\n" to output
+      Put answers[1] to output
+      Put "\n" to output
+      Put "\n" to output
